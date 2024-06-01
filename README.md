@@ -1,6 +1,6 @@
 # .dotfiles
 
-## Install 
+## Install
 
 ```bash
 source ~/.dotfiles/macos
