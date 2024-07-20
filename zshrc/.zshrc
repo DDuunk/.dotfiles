@@ -113,3 +113,5 @@ source <(ng completion script)
 
 # AWS SDK v2
 export AWS_SDK_LOAD_CONFIG=1
+
+. "$HOME/.cargo/env"
