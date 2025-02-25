@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-
 DOTFILES=${DOTFILES:-"$HOME/.dotfiles"}
 [[ -d $DOTFILES ]] || { echo "Error: $DOTFILES does not exist"; exit 1; }
 
 pushd "$DOTFILES" > /dev/null || exit
-stow -D */ || { echo "Error: Failed to unstow directories"; exit 1; }
+stow --restow */ || { echo "Error: Failed to stow directories"; exit 1; }
 popd > /dev/null
-echo "Unstow complete."
+echo "Stow complete."

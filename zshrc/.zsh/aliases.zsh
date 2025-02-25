@@ -16,14 +16,15 @@ alias pnpx="corepack pnpx"
 alias npm="corepack npm"
 alias npx="corepack npx"
 alias pnx="pnpm -- nx"
+alias bnx="bun -- nx"
 
 alias vim="nvim"
 
 alias lg="lazygit"
 alias glad="git log --all --decorate --oneline --graph"
 
-alias ls="exa --icons --group-directories-first -a"
-alias ll="exa --icons --group-directories-first -l -a"
+alias ls="eza --icons --group-directories-first -a"
+alias ll="eza --icons --group-directories-first -l -a"
 
 vv() {
   # Assumes all configs exist in directories named ~/.config/nvim-*

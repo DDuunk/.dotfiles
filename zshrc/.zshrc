@@ -15,6 +15,8 @@ export PATH="$HOME/.local/scripts:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -114,4 +116,14 @@ source <(ng completion script)
 # AWS SDK v2
 export AWS_SDK_LOAD_CONFIG=1
 
+# Disables auto-setting of `packageManager` when corepack is enabled
+export COREPACK_ENABLE_AUTO_PIN=0
+
 . "$HOME/.cargo/env"
+
+# Configure 1Password SSH agent
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+
+# export NVM_DIR="$HOME/.config/nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
